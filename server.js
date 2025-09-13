@@ -45,7 +45,7 @@ if (cluster.isMaster) {
 
     // ✅ Start Server (same file)
     app.listen(PORT, () => {
-        console.log(`✅ Server running on http://localhost:${PORT} and deployed by process ${process.pid}`);
+        console.log(`✅ Server running on http://localhost:${PORT} `);
     });
 
 }

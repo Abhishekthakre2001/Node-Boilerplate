@@ -18,7 +18,7 @@ const pool = mysql.createPool({
 (async () => {
   try {
     const connection = await pool.getConnection();
-    console.log("✅ bhai ci-cd ne deploy kiya!");
+    console.log("✅ Database connected successfully!");
     connection.release(); // release back to pool
   } catch (error) {
     console.error("❌ Database connection failed:", error.message);
