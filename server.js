@@ -9,7 +9,7 @@ const employeeRoutes = require("./src/routes/employeeRoutes");
 const errorHandler = require("./src/utils/errorHandler");
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4001;
 
 if (cluster.isMaster) {
     // 🌟 Master process (manages workers)
